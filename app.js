@@ -5,7 +5,8 @@ var express = require('express'),
     
     
 var app = express();
-mongoose.connect("mongodb://localhost/blog_db", { useNewUrlParser: true });
+//mongoose.connect("mongodb://localhost/blog_db", { useNewUrlParser: true });
+mongoose.connect("mongodb://admin:blogapp1@ds157383.mlab.com:57383/blog_app", { useNewUrlParser: true });
 
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(methodOverride("_method"));
