@@ -1,0 +1,18 @@
+.container {
+    width:80%;
+    max-width:700px;
+    margin:20px auto;
+}
+
+.ui.card {
+    width: 80%;
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.ui.items>.item {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 10px;
+}

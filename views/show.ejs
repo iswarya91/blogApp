@@ -1,0 +1,25 @@
+<% include partials/header %>
+ <div class="ui card">
+    <div class="image">
+      <img src="<%= blog.image %>">
+    </div>
+    <div class="content">
+      <div class="header"><%= blog.title %></div>
+      <div class="meta">
+        <a><%= blog.date %></a>
+      </div>
+      <div class="description">
+        <%- blog.content %>
+      </div>
+    </div>
+    <div class="extra content">
+      <span class="right floated">
+        <a href="/blogs/<%= blog._id %>/edit" class= "ui green inverted button large"  id="edit_blog">Update Blog</a>
+      </span>
+      <form action="/blogs/<%= blog._id %>?_method=DELETE" method="POST" >
+         <button class= "ui red inverted button large">Delete Blog</button>
+      </form>
+    </div>
+  </div>
+   <script src="/blog.js"></script>
+  <% include partials/footer %>
